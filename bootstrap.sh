@@ -7,4 +7,4 @@ cd "$(dirname "$0")"
 git pull
 
 #FIXME: Warn me I'm gonna lose the changes I've done outside the repo
-rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
+rsync --exclude-from .gitignore --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
