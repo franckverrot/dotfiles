@@ -177,4 +177,23 @@ alias gpsom="git push origin master"
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH=/usr/local/share/python:$PATH
+
+#######
+# Rbenv
+#######
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# My bin directory
+export PATH=~/.bin:$PATH
+
+# PG 9's bin directory
+export PATH=$PATH:/Library/PostgreSQL/9.1/bin/
+
+# Clojure's classpath
+export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+
+# Git editor
+export EDITOR="mvim -f"
+
 git config --global core.excludesfile ~/.gitignore
