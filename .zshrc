@@ -177,6 +177,7 @@ alias gpsom="git push origin master"
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH=/usr/local/share/python:$PATH
+export PATH=/usr/local/bin:$PATH
 
 #######
 # Rbenv
