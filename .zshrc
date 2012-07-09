@@ -177,3 +177,4 @@ alias gpsom="git push origin master"
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH=/usr/local/share/python:$PATH
+git config --global core.excludesfile ~/.gitignore
