@@ -117,3 +117,6 @@ nnoremap <c-l> <c-w>l
 
 " Map CtrlP
 let g:ctrlp_map = '<c-p>'
+
+" Clear search
+nnoremap <esc> :noh<return><esc>
