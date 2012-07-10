@@ -75,6 +75,8 @@ set modelines=10
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
+let NERDTreeShowHidden=1
+
 map <Leader>n :NERDTreeToggle<CR>
 
 " Disable arrow keys
