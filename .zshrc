@@ -114,7 +114,7 @@ ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[cyan]%}"
 
 PROMPT='
 %~
-%{$fg[white]%}$(git_time_since_commit)%{$fg[white]%}$(prompt_char) > %{$reset_color%}'
+%{$fg[white]%}$(git_time_since_commit)%{$fg[white]%}$(prompt_char) λ %{$reset_color%}'
 
 RPROMPT='%{$fg[white]%} $(ruby_prompt)$(~/.bin/git-cwd-info.rb)%{$reset_color%}'
 
