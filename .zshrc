@@ -191,6 +191,9 @@ export PATH=~/.bin:$PATH
 # PG 9's bin directory
 export PATH=/Library/PostgreSQL/9.1/bin:$PATH
 
+# brew's sbin directory
+export PATH=/usr/local/sbin:$PATH
+
 # Clojure's classpath
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 
