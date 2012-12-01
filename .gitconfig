@@ -40,3 +40,5 @@
 [mergetool "mvim"]
   cmd=mvim -d -g $LOCAL $MERGED $REMOTE
   keepbackup=false
+[core]
+  excludesfile=~/.gitignore
