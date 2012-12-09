@@ -35,6 +35,9 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,coverage/*
 " Status bar
 set laststatus=2
 
+" Reset leader
+let mapleader = ","
+
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -109,7 +112,7 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 set guioptions-=T
 
 " Switch between buffers
-nnoremap <leader><leader> <c-^>
+nnoremap <Leader><Leader> <c-^>
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
@@ -121,4 +124,4 @@ nnoremap <c-l> <c-w>l
 let g:ctrlp_map = '<c-p>'
 
 " Clear search
-nnoremap <esc> :noh<return><esc>
+nnoremap <Leader>h :nohls<return><esc>
