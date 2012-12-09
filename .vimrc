@@ -125,3 +125,6 @@ let g:ctrlp_map = '<c-p>'
 
 " Clear search
 nnoremap <Leader>h :nohls<return><esc>
+
+" Toggle tagbar
+nmap <Leader>b :TagbarToggle<CR>
