@@ -14,5 +14,11 @@ then
     exit 1
 fi
 
+if ! hash ag 2>&-
+then
+    echo >&2 "I require ag. Please run 'brew install the_silver_searcher'. Aborting."
+    exit 1
+fi
+
 #FIXME: Warn me I'm gonna lose the changes I've done outside the repo
 rsync --exclude-from .gitignore --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~

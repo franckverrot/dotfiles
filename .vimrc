@@ -129,3 +129,6 @@ nnoremap <Leader>h :nohls<return><esc>
 
 " Toggle tagbar
 nmap <Leader>b :TagbarToggle<CR>
+
+" Make use of ag
+let g:ackprg = 'ag --nogroup --nocolor --column'
