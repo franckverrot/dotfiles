@@ -31,6 +31,7 @@ set smartcase
 " Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,coverage/*
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|coverage|measurements)$'
 
 " Status bar
 set laststatus=2
