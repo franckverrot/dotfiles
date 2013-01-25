@@ -201,3 +201,8 @@ export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-cont
 export EDITOR="mvim -f"
 
 git config --global core.excludesfile ~/.gitignore
+
+# tmux aliases
+alias tn="tmux new -s"
+alias ta="tmux attach -t"
+alias tl="tmux list-sessions"
