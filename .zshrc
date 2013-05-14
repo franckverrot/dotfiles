@@ -74,9 +74,14 @@ function git_time_since_commit() {
   fi
 }
 
+function git_head_commit_id {
+  version=$(git rev-parse --short HEAD 2>/dev/null)
+  echo "$version"
+}
+
 function prompt_char {
-  git branch >/dev/null 2>/dev/null && echo '[±])' && return
-  hg root >/dev/null 2>/dev/null && echo '[☿])' && return
+  git branch >/dev/null 2>/dev/null && echo '[±]' && return
+  hg root >/dev/null 2>/dev/null && echo '[☿]' && return
   echo '[○]'
 }
 
@@ -113,10 +118,9 @@ ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[cyan]%}"
 #########
 
 PROMPT='
-%~
-%{$fg[white]%}$(git_time_since_commit)%{$fg[white]%}$(prompt_char) λ %{$reset_color%}'
+%~ %{$fg[white]%}$(git_head_commit_id) $(prompt_char) λ %{$reset_color%}'
 
-RPROMPT='%{$fg[white]%} $(ruby_prompt)$(~/.bin/git-cwd-info.rb)%{$reset_color%}'
+#RPROMPT='%{$fg[white]%} $(ruby_prompt)$(~/.bin/git-cwd-info.rb)%{$reset_color%}'
 
 #############
 # COMPLETION
