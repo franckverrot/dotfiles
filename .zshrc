@@ -193,7 +193,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=~/.bin:$PATH
 
 # PG 9's bin directory
-export PATH=/Library/PostgreSQL/9.1/bin:$PATH
+export PATH=/Library/PostgreSQL/9.2/bin:$PATH
 
 # brew's sbin directory
 export PATH=/usr/local/sbin:$PATH
