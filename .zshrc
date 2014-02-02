@@ -169,11 +169,9 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH=/usr/local/share/python:$PATH
 export PATH=/usr/local/bin:$PATH
 
-#######
-# Rbenv
-#######
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
+# chruby + ruby-install
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # My bin directory
 export PATH=~/.bin:$PATH
