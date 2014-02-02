@@ -188,7 +188,7 @@ export PATH=/usr/local/sbin:$PATH
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 
 # Git editor
-export EDITOR="mvim -f"
+export EDITOR="vim"
 
 git config --global core.excludesfile ~/.gitignore
 
