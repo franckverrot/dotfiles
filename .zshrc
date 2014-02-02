@@ -14,20 +14,6 @@ source $ZSH/oh-my-zsh.sh
 # FUNCTIONS
 ############
 
-# RVM or rbenv
-function ruby_prompt(){
-  rv=$(rbenv version-name)
-  if (echo $rv &> /dev/null)
-  then
-    echo "%{$fg_bold[gray]%}ruby $rv%{$reset_color%}"
-  elif $(which rvm &> /dev/null)
-  then
-    echo "%{$fg_bold[gray]%}$(rvm tools identifier)%{$reset_color%}"
-  else
-    echo ""
-  fi
-}
-
 # Determine the time since last commit. If branch is clean,
 # use a neutral color, otherwise colors will vary according to time.
 function git_time_since_commit() {
@@ -120,7 +106,7 @@ ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[cyan]%}"
 PROMPT='
 %~ %{$fg[white]%}$(git_head_commit_id) $(prompt_char) λ %{$reset_color%}'
 
-#RPROMPT='%{$fg[white]%} $(ruby_prompt)$(~/.bin/git-cwd-info.rb)%{$reset_color%}'
+#RPROMPT='%{$fg[white]%} $(~/.bin/git-cwd-info.rb)%{$reset_color%}'
 
 #############
 # COMPLETION
