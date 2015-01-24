@@ -121,6 +121,9 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" remap the esc key to something more convenient
+imap <c-\> <Esc>
+
 " Map CtrlP
 let g:ctrlp_map = '<c-p>'
 
