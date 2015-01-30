@@ -55,6 +55,14 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} map <buffer> <Leader>p :Mm <CR>
 
+" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
+
+" add json syntax highlighting
+au BufNewFile,BufRead *.json set ft=javascript
+
+au BufRead,BufNewFile *.txt call s:setupWrapping()
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -101,14 +109,6 @@ function s:setupWrapping()
   set wrapmargin=2
   set textwidth=72
 endfunction
-
-" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
-
-" add json syntax highlighting
-au BufNewFile,BufRead *.json set ft=javascript
-
-au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 set guioptions-=T
 
