@@ -63,6 +63,8 @@ au BufNewFile,BufRead *.json set ft=javascript
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
+au BufRead,BufNewFile *.es6 setfiletype javascript
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
