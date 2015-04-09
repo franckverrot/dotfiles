@@ -170,8 +170,8 @@ export PATH=/usr/local/share/python:$PATH
 export PATH=/usr/local/bin:$PATH
 
 # chruby + ruby-install
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 chruby ruby
 
 # My bin directory
