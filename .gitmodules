@@ -103,3 +103,6 @@
 [submodule ".vim/bundle/vim-elixir.vim"]
 	path = .vim/bundle/vim-elixir.vim
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
