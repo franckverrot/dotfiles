@@ -45,6 +45,8 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
+set tags+=gems.tags
+
 " make and python use real tabs
 au FileType make                                     set noexpandtab
 au FileType python                                   set noexpandtab
