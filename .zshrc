@@ -195,3 +195,7 @@ git config --global core.excludesfile ~/.gitignore
 alias tn="tmux new -s"
 alias ta="tmux attach -t"
 alias tl="tmux list-sessions"
+
+export SWIFTENV_ROOT="$HOME/.swiftenv"
+export PATH="$SWIFTENV_ROOT/bin:$PATH"
+eval "$(swiftenv init -)"
