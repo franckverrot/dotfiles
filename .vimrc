@@ -117,7 +117,7 @@ endfunction
 set guioptions-=T
 
 " Switch between buffers
-nnoremap <Leader><Leader> <c-^>
+nnoremap <Space><Space> <c-^>
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j

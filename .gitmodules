@@ -130,3 +130,6 @@
 [submodule ".vim/bundle/vim-rspec"]
 	path = .vim/bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule ".vim/bundle/haskell-vim-now.vim"]
+	path = .vim/bundle/haskell-vim-now.vim
+	url = https://github.com/begriffs/haskell-vim-now.git
