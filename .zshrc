@@ -174,17 +174,11 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 chruby ruby
 
-# My bin directory
-export PATH=~/.bin:$PATH
-
-# PG 9's bin directory
-export PATH=/Library/PostgreSQL/9.2/bin:$PATH
+# My bin directories
+export PATH=~/.bin:~/.local/bin:$PATH
 
 # brew's sbin directory
 export PATH=/usr/local/sbin:$PATH
-
-# Clojure's classpath
-export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 
 # Git editor
 export EDITOR="vim"
@@ -198,3 +192,5 @@ alias tl="tmux list-sessions"
 
 # Use vim as manpager
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
+
+export ERL_AFLAGS="-kernel shell_history enabled

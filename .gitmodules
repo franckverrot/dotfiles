@@ -133,3 +133,6 @@
 [submodule ".vim/bundle/haskell-vim-now.vim"]
 	path = .vim/bundle/haskell-vim-now.vim
 	url = https://github.com/begriffs/haskell-vim-now.git
+[submodule ".vim/bundle/elm-vim"]
+	path = .vim/bundle/elm-vim
+	url = https://github.com/ElmCast/elm-vim.git
