@@ -193,4 +193,4 @@ alias tl="tmux list-sessions"
 # Use vim as manpager
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
 
-export ERL_AFLAGS="-kernel shell_history enabled
+export ERL_AFLAGS="-kernel shell_history enabled"
